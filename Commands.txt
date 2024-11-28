@@ -1,4 +1,4 @@
 //goto folder directory location
 
-npx tailwindcss -i "./src/input.css" -o "./dist/style.css"
+npx tailwindcss -i "./src/input.css" -o "./dist/style.css" --watch
 

@@ -1,13 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-slate-950 text-white ">
-    <h1 class="text-7xl text-white m-80">Hello Tailwind</h1>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Website || TailwindCSS</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Remix Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.min.css"
+    />
+    <!-- Swiper's CSS -->
 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="">
+    <!-- header -->
+    <header id="navbar" class="bg-green-950 fixed w-full top-0 left-0 z-50">
+      <nav class="container flex items-center justify-between h-16 sm:h-20">
+        <div class="font-Lobster sm:text-2xl">IndorePlants.</div>
+        <div
+          id="nav-menu"
+          class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto"
+        >
+          <ul class="flex flex-col items-center gap-8 lg:flex-row">
+            <li><a href="#Home" class="nav-link">Home</a></li>
+            <li><a href="#About" class="nav-link">About</a></li>
+            <li><a href="#Popular" class="nav-link">Popular</a></li>
+            <li><a href="#Review" class="nav-link">Review</a></li>
+          </ul>
+          <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
+            <img class="w-32" src="../assets/img/leaf-1.png" alt="" />
+          </div>
+          <div class="absolute -top-5 -left-5 rotate-90 opacity-90 lg:hidden">
+            <img class="w-32" src="../assets/img/leaf-2.png" alt="" />
+          </div>
+        </div>
+        <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+          <i class="ri-menu-4-line" id="hamburger"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- home -->
+      <section id="home">
+        <div class="container">
+          <div class="flex flex-col items-center gap-5 lg:flex-row">
+            <!-- content -->
+            <div class="w-full space-y-5">
+              <h1>
+                <span class="text-yellow-500">Plants</span> Make a
+                <br />
+                positive
+                <span class="text-yellow-500">impact</span> on <br />
+                your enviroments
+              </h1>
+              <p class="text-slate-300 font-Lobster">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Distinctio fugiat eveniet, reprehenderit veritatis aut explicabo
+                voluptatum ullam itaque tenetur numquam!
+              </p>
+
+              <div flex flex-col gap-2 sm:flex-row>
+                <button class="btn">
+                  <span>Shop Now</span>
+                  <i class="ri-leaf-line"></i>
+                </button>
+
+                <button class="btn btn_outline">
+                  <span>Know More</span>
+                  <i class="ri-leaf-line"></i>
+                </button>
+              </div>
+              
+              <p class="text-xs font-Lobster text-slate-300">You will get 30-days free trial.</p>
+
+              <div class="flex items-center gap-5 text-lg">
+                <i class="ri-facebook-fill text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer text-base"></i>
+                <i class="ri-twitter-x-line text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer text-base"></i>
+                <i class="ri-instagram-line text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer text-base"></i>
+                <i class="ri-linkedin-fill text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer text-base"></i>
+              </div>
+            </div>
+            <!--  -->
+
+            <!-- image -->
+            <div class="w-full relative">
+              <img src="../assets/img/home.png" alt="home_image" />
+
+              <!-- leaf -->
+              <div class="absolute -top-10 right-0 opacity-30">
+                <i class="ri-leaf-line text-6xl text-yellow-500"></i>
+              </div>
+
+              <!-- leaf -->
+              <div class="absolute bottom-0 left-0 opacity-30">
+                <i class="ri-flower-line text-6xl text-yellow-500"></i>
+              </div>
+
+              <!-- leaf -->
+              <div class="absolute -top-10 -left-5 opacity-30">
+                <i class="ri-plant-line text-6xl text-yellow-500"></i>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- JS -->
+    <!--main JS -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
